@@ -1,0 +1,92 @@
+
+//+------------------------------------------------------------------+
+//|                                                Gold Stuff mt5 AI |
+//|                                  Expert Advisor by Forex Robot Easy Team |
+//|                                                      forexroboteasy.com |
+//+------------------------------------------------------------------+
+
+// Global variables
+extern bool AllowWebRequest = false; // Allow web requests
+extern string NewsURL = 'https://ec.forexprostools.com'; // URL for fetching news
+extern string TimeURL = 'https://www.worldtimeserver.com'; // URL for fetching time
+
+//+------------------------------------------------------------------+
+//| Expert initialization function                                   |
+//+------------------------------------------------------------------+
+int OnInit()
+{
+    // Check if web requests are allowed
+    if (AllowWebRequest)
+    {
+        // Fetch news from URL
+        string news = FetchNews(NewsURL);
+        Print('Fetched news: ', news);
+        
+        // Fetch time from URL
+        string time = FetchTime(TimeURL);
+        Print('Fetched time: ', time);
+    }
+    
+    // Initialize other necessary functions
+    
+    return INIT_SUCCEEDED;
+}
+
+//+------------------------------------------------------------------+
+//| Expert deinitialization function                                 |
+//+------------------------------------------------------------------+
+void OnDeinit(const int reason)
+{
+    // Perform necessary cleanup and deinitialization
+}
+
+//+------------------------------------------------------------------+
+//| Expert tick function                                             |
+//+------------------------------------------------------------------+
+void OnTick()
+{
+    // Perform necessary trading functions based on Gold indicator and AI analysis
+    
+    // Check for entry points using Gold indicator
+    
+    // Perform fundamental analysis using AI
+    
+    // Place trades based on analysis and indicators
+    
+    // Implement hedging capability
+    
+    // Mitigate risks and enhance forex strategies
+    
+    // Keep up with the fast-paced forex market
+    
+    // Add necessary comments for code clarity
+    
+    // ...
+    
+    // Perform other necessary trading functions
+    
+}
+
+//+------------------------------------------------------------------+
+//| Fetch news from the specified URL                                 |
+//+------------------------------------------------------------------+
+string FetchNews(string url)
+{
+    // Implement code to fetch news from the specified URL
+    
+    // ...
+    
+    return 'News fetched successfully';
+}
+
+//+------------------------------------------------------------------+
+//| Fetch time from the specified URL                                 |
+//+------------------------------------------------------------------+
+string FetchTime(string url)
+{
+    // Implement code to fetch time from the specified URL
+    
+    // ...
+    
+    return 'Time fetched successfully';
+}
